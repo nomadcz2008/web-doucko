@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O projektu – Studenti studentům</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">🎓 Studenti studentům</div>
+      <nav>
+        <a href="{{ url_for('main.home') }}">Domů</a>
+        <a href="{{ url_for('main.about') }}">O projektu</a>
+        <a href="{{ url_for('main.payment') }}">Koupit kurz</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>O projektu</h1>
+      <p>
+        Tento projekt vznikl jako iniciativa studentů Gymnázia Jana Keplera, kteří se rozhodli nabídnout pomoc těm, kdo se připravují na přijímací zkoušky na víceletá gymnázia.
+      </p>
+      <p>
+        Věříme, že díky zkušenostem, které jsme sami nasbírali, můžeme ostatním předat nejen znalosti, ale také praktické tipy, jak se s přípravou poprat co nejlépe.
+      </p>
+      <p>
+        Naším cílem není jen předávat informace, ale také dodat motivaci, podporu a strukturu v náročném období přípravy. Projekt je organizován a veden studenty, což zajišťuje přirozený a blízký přístup k uchazečům.
+      </p>
+      <p>
+        Webová stránka slouží nejen jako informační portál, ale také jako brána ke koupi kurzů a přihlášení se na doučování.
+      </p>
+    </div>
+    <img src="{{ url_for('static', filename='images/about-illustration.png') }}" alt="Ilustrace o projektu" class="hero-image">
+  </section>
+
+  <footer>
+    &copy; 2025 Studenti studentům. Všechna práva vyhrazena.
+  </footer>
+</body>
+</html>

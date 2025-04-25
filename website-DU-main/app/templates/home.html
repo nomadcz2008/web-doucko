@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studenti studentům – Domů</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="white-bg">
+  <header>
+    <div class="header-inner">
+      <div class="logo">🎓 Studenti studentům</div>
+      <nav>
+        <a href="{{ url_for('main.home') }}">Domů</a>
+        <a href="{{ url_for('main.about') }}">O kurzu</a>
+        <a href="{{ url_for('main.payment') }}">Koupit kurz</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero white-bg">
+    <div class="hero-content">
+      <h1>Pomáháme budoucím gymplákům uspět</h1>
+      <p>Doučování od studentů Gymnázia Jana Keplera pro všechny, kdo se připravují na přijímací zkoušky na víceletá gymnázia.</p>
+    </div>
+    <img class="hero-image" src="{{ url_for('static', filename='img/home_students.jpg') }}" alt="Ilustrační obrázek kurzu">
+  </section>
+
+  <section class="features highlight-section">
+    <div class="feature">
+      <h2>O projektu</h2>
+      <p>Projekt "Studenti studentům" je iniciativou studentů Gymnázia Jana Keplera, která má za cíl pomáhat žákům při přípravě na přijímací zkoušky. Program vedou úspěšní absolventi zkoušek, kteří sdílí své zkušenosti.</p>
+      <p>Studenti se zároveň učí učit a pomáhají mladším spolužákům uspět.</p>
+    </div>
+  </section>
+  
+
+  <footer>
+    &copy; 2025 Studenti studentům. Všechna práva vyhrazena.
+  </footer>
+</body>
+</html>
+
